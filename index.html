@@ -351,19 +351,28 @@
           <span class="lbl">Request a quote</span>
           <h2 class="s3" style="margin-top:8px">Tell Us About Your Project.</h2>
           <p class="p" style="margin-top:8px">Share your goals, ideas, or concerns. We&rsquo;ll help determine the right solution during your consultation.</p>
-          <div style="display:grid;gap:16px;margin-top:22px">
-            <div class="duo">
-              <div class="f"><label for="n1">Name</label><input id="n1" type="text" placeholder="First and last"></div>
-              <div class="f"><label for="n2">Phone</label><input id="n2" type="tel" placeholder="(239) 000-0000"></div>
-            </div>
-            <div class="f"><label for="n3">Email</label><input id="n3" type="email" placeholder="you@email.com"></div>
-            <div class="duo">
-              <div class="f"><label for="n4">City</label><select id="n4"><option>Naples</option><option>Fort Myers</option><option>Fort Myers Beach</option><option>Cape Coral</option><option>Estero</option><option>Bonita Springs</option><option>Sanibel</option><option>Lehigh Acres</option><option>Somewhere else</option></select></div>
-              <div class="f"><label for="n5">Project type</label><select id="n5"><option>Full renovation</option><option>Kitchen or bath</option><option>Carpentry or cabinetry</option><option>Siding, windows or doors</option><option>New construction</option><option>Storm repair</option></select></div>
-            </div>
-            <div class="f"><label for="n6">What Would You Like to Accomplish?</label><textarea id="n6" placeholder="Tell us about your project, timeline, and any questions you have."></textarea></div>
-            <div><button class="b" type="button" id="send">Request a Consultation <span class="ar">&rarr;</span></button></div>
-            <p class="nt" id="note">Prototype form, not wired to an inbox yet. Connect to the client's CRM or a form endpoint before launch.</p>
+          <!-- LeadConnector embedded form. The fields, labels, placeholders and submit
+               button all live in the LeadConnector form builder, not in this file.
+               form_embed.js (loaded at the bottom of this document) resizes the iframe
+               to fit its content; the height below is the starting value it adjusts from. -->
+          <div class="ctembed">
+            <iframe
+              src="https://api.leadconnectorhq.com/widget/form/8VDXtzsYXkVH5dgba4f7"
+              style="width:100%;height:978px;border:none;border-radius:8px"
+              id="inline-8VDXtzsYXkVH5dgba4f7"
+              data-layout="{'id':'INLINE'}"
+              data-trigger-type="alwaysShow"
+              data-trigger-value=""
+              data-activation-type="alwaysActivated"
+              data-activation-value=""
+              data-deactivation-type="neverDeactivate"
+              data-deactivation-value=""
+              data-form-name="Perri Website Form"
+              data-height="978"
+              data-layout-iframe-id="inline-8VDXtzsYXkVH5dgba4f7"
+              data-form-id="8VDXtzsYXkVH5dgba4f7"
+              title="Perri Website Form">
+            </iframe>
           </div>
         </div>
       </div>
@@ -414,9 +423,11 @@
     <div class="sp2"><h4>Follow us</h4><ul>
       <li><a href="https://www.instagram.com/perri_brothers/">Instagram</a></li>
       <li><a href="https://www.facebook.com/profile.php?id=61581746925898">Facebook</a></li>
+      <li><a href="terms-and-conditions.html">Terms &amp; Conditions</a></li>
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
     </ul></div>
   </div>
-  <div class="ft__bar"><span>© 2026 Perri Brothers Construction. All rights reserved.</span><span>Naples · Fort Myers · Cape Coral · Estero</span></div>
+  <div class="ft__bar"><span>© 2026 Perri Brothers Construction LLC. All rights reserved. &nbsp;·&nbsp; FL Certified General Contractor lic. CGC1536451</span><span>Naples · Fort Myers · Cape Coral · Estero</span></div>
 </div></footer>
 
 <div class="dvw" id="dvw"><div class="dvstage"><div class="dvframe" id="dvframe"><iframe id="dvif" title="Responsive preview"></iframe></div></div></div>
@@ -441,5 +452,6 @@
 
 
 <script src="js/main.js" defer></script>
+<script src="https://link.msgsndr.com/js/form_embed.js" defer></script>
 </body>
 </html>
